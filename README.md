@@ -222,38 +222,38 @@ history
 ```
 
 
-  939  git branch second _branch
-  940  git checkout second_branch
-  941  git add README.md
-  942  git commit -m "Создан конфликт из второй ветки"
-  943  git checkout master
-  944  git add README.md
-  945  git commit -m "Создание конфликта из ветки master"
-  946  git merge second_branch
-  947  git add README.md
-  948  git commit -m "Разрешение конфликта"
-  949  git merge second_branch
-  950  git branch -d second_branch
-  951  git 10g --oneline --graph
-  952  git add README.md
-  953  git commit -m "Изменение 1"
-  954  git add README.md
-  955  git commit -m "Изменение 2"
-  956  git reset --hard HEAD~1\n
-  957  git branch report
-  958  git checkout report
-  959  git add .
-  960  git index
-  961  git status
-  962  git add .
-  963  git status
-  964  git commit -m "Первый этап создания отчета"
-  965  git add .
-  966  git commit -m "Второй этап создания отчета"
-  967  git add .
-  968  git commit -m "Второй этап создания отчета"
-  969  git add .
-  970  git commit -m "Третий этап создания отчета"
+1.  939  git branch second _branch
+2.  940  git checkout second_branch
+3.  941  git add README.md
+4.  942  git commit -m "Создан конфликт из второй ветки"
+5.  943  git checkout master
+6.  944  git add README.md
+7.  945  git commit -m "Создание конфликта из ветки master"
+8.  946  git merge second_branch
+9.  947  git add README.md
+10.  948  git commit -m "Разрешение конфликта"
+11.  949  git merge second_branch
+12.  950  git branch -d second_branch
+13.  951  git 10g --oneline --graph
+14.  952  git add README.md
+15.  953  git commit -m "Изменение 1"
+16.  954  git add README.md
+17.  955  git commit -m "Изменение 2"
+18.  956  git reset --hard HEAD~1\n
+19.  957  git branch report
+20.  958  git checkout report
+21.  959  git add .
+22.  960  git index
+23.  961  git status
+24.  962  git add .
+25.  963  git status
+26.  964  git commit -m "Первый этап создания отчета"
+27.  965  git add .
+28.  966  git commit -m "Второй этап создания отчета"
+29.  967  git add .
+30.  968  git commit -m "Второй этап создания отчета"
+31.  969  git add .
+32.  970  git commit -m "Третий этап создания отчета"
 
 
 ### 15. Получаем историю в форматированном:
@@ -272,17 +272,17 @@ git log --pretty=format:"%h | %ad | %an | %s" --date=short
 
 **Результат:**
 
-dfc88bf | 2024-11-23 | 4316 Zorin.M.N | Третий этап создания отчета
-c8423f4 | 2024-11-23 | 4316 Zorin.M.N | Второй этап создания отчета
-d672f3b | 2024-11-23 | 4316 Zorin.M.N | Первый этап создания отчета
-2f5fcee | 2024-11-22 | 4316 Zorin.M.N | Изменение 1
-8855b59 | 2024-11-22 | 4316 Zorin.M.N | Разрешение конфликта
-16ff792 | 2024-11-22 | 4316 Zorin.M.N | Создание конфликта из ветки master
-fa24e25 | 2024-11-22 | 4316 Zorin.M.N | Создан конфликт из второй ветки
-bbd94b5 | 2024-11-21 | WlcM111 | Create README1.md
-921f53b | 2020-11-21 | Kurtyanik | Обновление информации
-c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым
-3c6e913 | 2020-11-21 | Kurtyanik | Initial commit
+1. dfc88bf | 2024-11-23 | 4316 Zorin.M.N | Третий этап создания отчета
+2. c8423f4 | 2024-11-23 | 4316 Zorin.M.N | Второй этап создания отчета
+3. d672f3b | 2024-11-23 | 4316 Zorin.M.N | Первый этап создания отчета
+4. 2f5fcee | 2024-11-22 | 4316 Zorin.M.N | Изменение 1
+5. 8855b59 | 2024-11-22 | 4316 Zorin.M.N | Разрешение конфликта
+6. 16ff792 | 2024-11-22 | 4316 Zorin.M.N | Создание конфликта из ветки master
+7. fa24e25 | 2024-11-22 | 4316 Zorin.M.N | Создан конфликт из второй ветки
+8. bbd94b5 | 2024-11-21 | WlcM111 | Create README1.md
+9. 921f53b | 2020-11-21 | Kurtyanik | Обновление информации
+10. c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым
+11. 3c6e913 | 2020-11-21 | Kurtyanik | Initial commit
 
 
 ## Выводы: 
