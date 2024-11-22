@@ -93,7 +93,7 @@ git show
 
   
 
-Список команд:
+# Список команд:
 
   
 
@@ -109,7 +109,7 @@ git branch second_branch
 
 Для перехода в нее:
 
-  
+
 
 ```bash
 
@@ -177,22 +177,114 @@ git reset --hard HEAD~1
 
 1. Скриншот №1:
 
+
 ![Первый скриншот](screenshots/screen_1.jpeg)
+
 
 2. Скриншот №2:
 
+
 ![Второй скриншот](screenshots/screen_2.jpeg)
+
 
 3. Скриншот №3:
 
+
 ![Третий скриншот](screenshots/screen_3.png)
+
 
 4. Скриншот №4:
   
+
 ![Четвертый скриншот](screenshots/screen_4.png)
+
 
 5. Скриншот №5:
 
+
 ![Пятый скриншот](screenshots/screen_5.png)
 
+
+6. Скриншот №6 Конфликтные маркеры, показывающие проблемное место:
+
+![Шестой скриншот](screenshots/screen_6.png)
+
 ### 14. Лог всех команд:
+
+
+Команда для вывод логов для Linux/MacOS:
+
+
+```bash
+
+history
+
+```
+
+
+  939  git branch second _branch
+  940  git checkout second_branch
+  941  git add README.md
+  942  git commit -m "Создан конфликт из второй ветки"
+  943  git checkout master
+  944  git add README.md
+  945  git commit -m "Создание конфликта из ветки master"
+  946  git merge second_branch
+  947  git add README.md
+  948  git commit -m "Разрешение конфликта"
+  949  git merge second_branch
+  950  git branch -d second_branch
+  951  git 10g --oneline --graph
+  952  git add README.md
+  953  git commit -m "Изменение 1"
+  954  git add README.md
+  955  git commit -m "Изменение 2"
+  956  git reset --hard HEAD~1\n
+  957  git branch report
+  958  git checkout report
+  959  git add .
+  960  git index
+  961  git status
+  962  git add .
+  963  git status
+  964  git commit -m "Первый этап создания отчета"
+  965  git add .
+  966  git commit -m "Второй этап создания отчета"
+  967  git add .
+  968  git commit -m "Второй этап создания отчета"
+  969  git add .
+  970  git commit -m "Третий этап создания отчета"
+
+
+### 15. Получаем историю в форматированном:
+
+Команда для вывода форматированной истории:
+
+
+
+```bash
+
+git log --pretty=format:"%h | %ad | %an | %s" --date=short
+
+```
+
+
+
+**Результат:**
+
+dfc88bf | 2024-11-23 | 4316 Zorin.M.N | Третий этап создания отчета
+c8423f4 | 2024-11-23 | 4316 Zorin.M.N | Второй этап создания отчета
+d672f3b | 2024-11-23 | 4316 Zorin.M.N | Первый этап создания отчета
+2f5fcee | 2024-11-22 | 4316 Zorin.M.N | Изменение 1
+8855b59 | 2024-11-22 | 4316 Zorin.M.N | Разрешение конфликта
+16ff792 | 2024-11-22 | 4316 Zorin.M.N | Создание конфликта из ветки master
+fa24e25 | 2024-11-22 | 4316 Zorin.M.N | Создан конфликт из второй ветки
+bbd94b5 | 2024-11-21 | WlcM111 | Create README1.md
+921f53b | 2020-11-21 | Kurtyanik | Обновление информации
+c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым
+3c6e913 | 2020-11-21 | Kurtyanik | Initial commit
+
+
+## Выводы: 
+
+В ходе лабораторной работы были изучены основные методы работы с Git. Также был освоен фомат Markdown. Также был получен навык разрешения конфликтов при слиянии веток.
